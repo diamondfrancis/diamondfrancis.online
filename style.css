@@ -1,0 +1,55 @@
+html, body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.body{
+    padding: 10px;
+    padding-top: 75px;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.logo-text{
+font-size:  100px;
+font-weight: 800;
+display: block;
+}
+
+.btn{
+display: inline-block;
+color: rgb(0, 0, 0);
+border: 2.5px solid rgb(0, 0, 0);
+background-color: transparent;
+padding: 10px 30px;
+font-size: 17px;
+border-radius: 69px;
+margin: 10px;
+cursor: pointer;
+text-decoration: none;
+}
+
+.hidden-btn{
+text-align: center; 
+display: none;
+}
+
+.welcome-text{
+height: 80px;
+box-sizing: border-box;
+padding: 15px;
+position: relative; 
+}
+
+.welcome-text span{
+display: none;
+font-size: 35px; 
+position: absolute;
+right: 0px;
+left: 0px;
+bottom: 0px;
+}

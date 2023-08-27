@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diamond Francis Online</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="welcome-text"><span>Welcome to</span></div>
+      <span class="logo-text">Diamond Francis Online</span>
+      <button class="enter-btn btn">Enter</button>
+      <p class="hidden-btn">
+        <a href="https://linktr.ee/diamondfrancisonline" class="btn">Linktree</a
+        ><br />
+        <a href="https://www.threads.net/@diamondfrancis.online" class="btn"
+          >Threads</a
+        ><br />
+        <a href="https://www.youtube.com/@DiamondFrancisOnline" class="btn"
+          >YouTube</a
+        ><br />
+        <a href="https://www.instagram.com/diamondfrancis.online/" class="btn"
+          >Instagram</a
+        ><br />
+        <a href="https://www.facebook.com/diamondfrancisonline/" class="btn"
+          >Facebook</a
+        ><br />
+        <a href="https://www.pinterest.co.uk/diamondfrancisonline/" class="btn"
+          >Pinterest</a
+        ><br />
+      </p>
+    </div>
+  </body>
+
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+  ></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".enter-btn").click(function () {
+        $(this).hide();
+        $(".welcome-text span").fadeIn(1500);
+        $(".hidden-btn").slideDown(1800);
+      });
+    });
+  </script>
+</html>
