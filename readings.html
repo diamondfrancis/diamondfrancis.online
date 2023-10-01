@@ -24,10 +24,6 @@
         padding: 0 25px;
       }
 
-      @media (300px <= width <= 600px) {
-      .nav { overflow: auto; }
-      }
-
       h1,
       h2 {
         color: #211f26;
@@ -72,7 +68,7 @@
       }
 
       .readings {
-        width: 100%;
+        width: 960px;
         margin: 0 auto;
         flex: 1;
         margin-top: 32px;
@@ -89,6 +85,7 @@
       }
 
       .readings > a {
+        max-width: 100%;
         margin-bottom: 20px;
       }
 
@@ -99,6 +96,7 @@
         padding: 16px;
         border: 1px solid #e8e5ed;
         display: flex;
+        width: 100%;
         justify-content: space-between;
         transition: background-color 200ms ease-out;
       }
@@ -108,13 +106,10 @@
       }
 
       .readings__header {
+        font-size: x-small;
         display: flex;
         justify-content: space-between;
         color: #211f26;
-      }
-
-      .readings__content {
-        flex: 1;
       }
 
       .readings__content > a {
@@ -178,8 +173,9 @@
         }
       }
 
-      @media (max-width: 1250px) {
+      @media (max-width: 768px) {
       }
+
 </style>
 <body>
 <!--Readings: Welcome to... @diamondreadings (Profile)-->
