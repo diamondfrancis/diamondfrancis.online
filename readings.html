@@ -153,19 +153,25 @@
       /*Profile refresh movement*/
 
       @keyframes zoomFirst {
-        0% {
-          transform: translateY(2rem) scale(1.08);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
-      
-      .animate {
-    animation: opacityAndBlurr 2s forwards; /* Animation will last for 2 seconds */
+    0% {
+        transform: translateY(2rem) scale(1.08);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate {
+    animation: zoomFirst 2s forwards; /* Now using zoomFirst animation */
     width: 200px;
     height: 200px;
-      }
+}
+
+.animate {
+    animation: opacityAndBlurr 2s forwards, zoomFirst 2s forwards; /* Applying both animations */
+    width: 200px;
+    height: 200px;
+}
 
       @keyframes zoomLast {
         0% {
