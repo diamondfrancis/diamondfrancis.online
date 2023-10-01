@@ -10,8 +10,10 @@ body {
   font-size: 20px;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
-  .nav { overflow: auto; }
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+  }
 }
 
 h1, p{
