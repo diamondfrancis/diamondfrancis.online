@@ -4,17 +4,13 @@ html, body{
     font-size: 16px;
 }
 
-:root {
-    --cornerRad: 4px;
-  }
-
 body {
   background-color: var(--primColor);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
-@media (300px <= width <= 600px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .nav { overflow: auto; }
 }
 
@@ -79,11 +75,6 @@ td:last-child {
   text-align: right;
   padding-right: 10px;
 }
-
-.website:hover {
-  color: rgb(177, 177, 177);
-}
-
 
 /*nav*/
 
