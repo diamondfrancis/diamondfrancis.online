@@ -14,6 +14,10 @@ body {
   font-size: 20px;
 }
 
+@media (300px <= width <= 600px) {
+  .nav { overflow: auto; }
+}
+
 h1, p{
     width: 100%;
     text-align: center;
@@ -136,10 +140,6 @@ td:last-child {
   height: 5px;
   z-index: 1;
   border-radius: 8px 8px 0 0;
-}
-
-@media (max-width: 580px) {
-  .nav { overflow: auto; }
 }
     
 .container{
