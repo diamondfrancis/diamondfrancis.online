@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readings</title>
+  </head>
+
+  <style>
+          * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #faf9fb;
+        font-family: "Inter", sans-serif;
+        color: #040404;
+        max-width: 512px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 0 25px;
+      }
+
+      h1,
+      h2 {
+        color: #211f26;
+      }
+
+      p {
+        color: #65636d;
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      header {
+        padding-top: 80px;
+      }
+
+      header > h1 {
+        margin-top: 24px;
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      header > p {
+        margin-top: 8px;
+        font-weight: 400;
+      }
+
+      .sub-title {
+        margin-top: 8px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .zoomLastAnimation {
+        animation: zoomLast 300ms ease-out 300ms forwards;
+        opacity: 0;
+      }
+
+      .readings {
+        width: 100%;
+        margin: 0 auto;
+        flex: 1;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        animation: zoomFirst 600ms ease-out,
+          opacityAndBlurr 600ms ease-out forwards;
+        opacity: 0;
+      }
+
+      .readings > h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      .readings > a {
+        margin-bottom: 20px;
+      }
+
+      .readings {
+        backdrop-filter: blur(4px);
+        background-color: #f9f7fb;
+        border-radius: 12px;
+        padding: 16px;
+        border: 1px solid #e8e5ed;
+        display: flex;
+        justify-content: space-between;
+        transition: background-color 200ms ease-out;
+      }
+
+      .readings:hover {
+        background-color: #eceaef;
+      }
+
+      .readings__header {
+        display: flex;
+        justify-content: space-between;
+        color: #211f26;
+      }
+
+      .readings__content {
+        flex: 1;
+      }
+
+      .readings__content > a {
+        color: #000000;
+      }
+
+      .readings__content > p {
+        margin-top: 9px;
+        font-weight: 450;
+      }
+
+  /* connect*/
+      .cnnect {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cnnect > a,
+      .cnnect > span {
+        font-weight: 30;
+        color: #58a0cf;
+      }
+
+      .cnnect > a:hover {
+        text-decoration: underline;
+      }
+
+      /*Readings content refresh movement*/
+
+      @keyframes opacityAndBlurr {
+        0% {
+          opacity: 0;
+          filter: blur(20px);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0.1px);
+        }
+      }
+
+      /*Profile refresh movement*/
+
+      @keyframes zoomFirst {
+        0% {
+          transform: translateY(2rem) scale(1.08);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes zoomLast {
+        0% {
+          transform: translateY(2rem) scale(1.08);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 1250px) {
+      }
+</style>
+<body>
+<!--Readings: Welcome to... @diamondreadings (Profile)-->
+    <header class="zoomLastAnimation">
+      <img
+        src="/images/x-diamondreadings-profile.jpg"
+        alt="Diamond Readings"
+        width="100"
+        height="100"
+        style="border-radius:100%"
+      />
+      <h1 class="title">@diamondreadings</h1>
+      <p class="sub-title">💎💎 Reads 💎💎</p>
+    </header>
+    <!--Readings: Welcome to... @diamondreadings (X/Twitter Links)-->
+    <section class="projects">
+      <h2>I am currently reading a book in 30 days!</h2>
+      <a href="https://twitter.com/diamondreadings/status/1708232623707885838">
+        <div class="readings">
+          <div class="readings__content">
+            <span class="readings__header">https://twitter.com/diamondreadings/status/1708232623707885838</span>
+            <p>
+              30th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1707864111617335513">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1707864111617335513</div>
+            <p>
+              29th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1707498639025725900">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1707498639025725900</div>
+            <p>
+              28th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1707130870144836079">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1707130870144836079</div>
+            <p>
+              26th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1706777447645995087">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1706777447645995087</div>
+            <p>
+              25th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1706412893405594006">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1706412893405594006</div>
+            <p>
+              24th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1706048722419802287">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1706048722419802287</div>
+            <p>
+              23rd Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1705327492783853823">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1705327492783853823</div>
+            <p>
+              22nd Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1704954859080896650">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1704954859080896650</div>
+            <p>
+              21tst Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1704608167475183957">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1704608167475183957</div>
+            <p>
+              20th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://twitter.com/diamondreadings/status/1704239035198144778">
+        <div class="readings">
+          <div class="readings__content">
+            <div class="readings__header">https://twitter.com/diamondreadings/status/1704239035198144778</div>
+            <p>
+              19th Sept 2023
+            </p>
+          </div>
+        </div>
+      </a>
+      <br>
+      <h2>Connect with me on:</h2><br>
+      <div class="cnnect">
+        <a
+          href="https://twitter.com/diamondreadings"
+          target="_blank"
+          rel="X/Twitter"
+          >Twitter</a
+        >
+        <a
+          href="https://www.are.na/diamond-francis"
+          target="_blank"
+          rel="Are.na"
+        >
+          Are.na
+        </a>
+        <a
+        href="/index.html"
+        target="_blank"
+        rel="Homepage"
+      ><br>
+      >>Homepage
+      </a>
+      </div>
+    </section>
+</body>
+</html>
