@@ -83,6 +83,17 @@ td:last-child {
   box-shadow: 0 5px 40px rgba(159, 162, 177, .8);
 }
 
+.nav-2 {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  padding: 0px 0px 0px 9px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 40px rgba(159, 162, 177, .8);
+}
+
 @media (max-width: 768px) {
   .nav {
       flex-direction: row;
@@ -125,6 +136,17 @@ td:last-child {
 .nav-indicator {
   position: absolute;
   left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+.nav-indicator-2 {
+  position: sticky;
+  right: 0;
   bottom: 0;
   height: 4px;
   transition: .4s;
