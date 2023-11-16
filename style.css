@@ -1,3 +1,5 @@
+/*  MAIN */
+
 html, body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -22,7 +24,7 @@ h2 {
   color: black;
 }
 
-/*Table*/
+/*  TABLES  */
  
 table {
   text-align: left;
@@ -71,7 +73,7 @@ td:last-child {
   padding-right: 10px;
 }
 
-/*nav*/
+/*  NAVIGATION BARS  */
 
 .nav {
   display: inline-flex;
@@ -130,7 +132,6 @@ td:last-child {
   bottom: 0;
 }
 
-
 .nav-item:not(.is-active):hover { color: #333; }
 
 .nav-indicator {
@@ -155,29 +156,15 @@ td:last-child {
   border-radius: 8px 8px 0 0;
 }
 
-/*Home animation*/
-.socials{
-    text-align: center;
-}
-
-/* Tablet */
-.logo-text{
-font-size:  100px;
-font-weight: 800;
-display: block;
-}
-
+/*  SOCIAL MEDIA BUTTONS  */
 .btn{
 display: inline-block;
-color: rgb(0, 0, 0);
 border: 2.5px solid rgb(0, 0, 0);
-background-color: transparent;
 padding: 10px 30px;
 font-size: 17px;
-border-radius: 69px;
+border-radius: 50px;
 margin: 10px;
 cursor: pointer;
-text-decoration: none;
 }
 
 .btn:hover {
@@ -185,23 +172,6 @@ text-decoration: none;
   transform: translateY(-7px);
 }
 
-.hidden-btn{
-text-align: center; 
-display: none;
-}
-
-.welcome-text{
-height: 80px;
-box-sizing: border-box;
-padding: 15px;
-position: relative; 
-}
-
-.welcome-text span{
-display: none;
-font-size: 35px; 
-position: absolute;
-right: 0px;
-left: 0px;
-bottom: 0px;
+.sociallinks{
+text-align: center;
 }
