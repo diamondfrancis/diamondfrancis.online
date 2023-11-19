@@ -172,6 +172,15 @@ cursor: pointer;
   transform: translateY(-7px);
 }
 
+.btn a{
+  -webkit-text-fill-color: #2b2929;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  text-decoration:underline
+}
+
 .sociallinks{
 text-align: center;
 }
