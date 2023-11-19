@@ -178,10 +178,13 @@ text-align: center;
 
 /*CARD*/
 
+@media (min-width: 700px) {
 .cards{
   display:grid;
+  max-width: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-gap:20px;
+}
 }
 
 .card-1{
