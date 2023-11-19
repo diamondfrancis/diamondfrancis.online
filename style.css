@@ -175,3 +175,20 @@ cursor: pointer;
 .sociallinks{
 text-align: center;
 }
+
+/*CARD*/
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:20px;
+}
+
+.card-1{
+background-color: #f6f6f6;
+padding: 20px;
+text-align: center;
+font-size: 24px;
+border-radius: 20cap;
+border-style: groove;
+}
