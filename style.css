@@ -12,7 +12,14 @@ body {
   font-size: 20px;
 }
 
-h1, p{
+h1{
+  font-size: 2em;
+  line-height: 1em;
+  text-align: center;
+  color: black;
+}
+
+p{
     width: 100%;
     text-align: center;
 }
@@ -76,84 +83,23 @@ td:last-child {
 /*  NAVIGATION BARS  */
 
 .nav {
-  display: inline-flex;
-  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  padding: 0px 0px 0px 9px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 5px 40px rgba(159, 162, 177, .8);
-}
-
-.nav-2 {
-  display: inline-flex;
-  position: relative;
-  overflow: hidden;
-  align-items: center;
-  padding: 0px 0px 0px 9px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 5px 40px rgba(159, 162, 177, .8);
-}
-
-@media (max-width: 768px) {
-  .nav {
-      flex-direction: row;
-  }
 }
 
 .nav-item {
-  color: #83818c;
-  padding: 20px;
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color:white;
   text-decoration: none;
-  transition: .3s;
-  margin: 0 6px;
-  z-index: 1;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 50;
-  position: relative;
-  
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #dfe2ea;
-    border-radius: 8px 8px 0 0;
-    opacity: 0;
-    transition: .3s;
-  }
 }
 
-.nav-item:not(.is-active):hover:before {
-  opacity: 1;
-  bottom: 0;
-}
-
-.nav-item:not(.is-active):hover { color: #333; }
-
-.nav-indicator {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  transition: .4s;
-  height: 5px;
-  z-index: 1;
-  border-radius: 8px 8px 0 0;
-}
-
-.nav-indicator-2 {
-  position: sticky;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  transition: .4s;
-  height: 5px;
-  z-index: 1;
-  border-radius: 8px 8px 0 0;
+nav .nav-item:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 /*  SOCIAL MEDIA BUTTONS  */
@@ -216,4 +162,21 @@ border: 3px solid black;
 
   img{
     width: 200px;
+  }
+
+  /** GRID**/
+  .grid-area{
+    display: inline-flex;
+    max-width: auto;
+    grid-template-columns: repeat(0, 0fr);
+    grid-gap: 20px;
+  }
+
+  .grid-1{
+    background-color: #f6f6f6;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 1cap;
+    border: 3px solid rgb(0, 0, 0);
   }
