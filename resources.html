@@ -7,35 +7,40 @@
     <title>Resources</title>
 </head>
 <body>
-        <!--navigation bar-->
-        <nav class="nav">
-          <a href="/home.html" class="nav-item">Home</a>
-          <a href="/builds.html" class="nav-item">Builds</a>
-          <a href="/readings.html" class="nav-item">Readings</a>
-          <a href="/resources.html" class="nav-item">Resources</a>
-        </nav>
-        <h1>
-            Resources
-        </h1>
-        <p>Resource Library.</p>
-        <div class="grid-area">
-               <!--resource list for design and dev topics --> 
-               <br>
-                <div class="grid-1"><h2>Wallpapers</h2>
-                    <p>#1 - <a href="https://diamondfrancis.gumroad.com/l/iphone-14-pro-holographic-wallpaper?layout=profile">iPhone 14 Holographic Wallpaper</a></p>
-                    <p>#2 - <a href="https://diamondfrancis.gumroad.com/l/minimal-circle-wallpaper-pack?layout=profile">Minimal Circle Wallpaper Pack <br>(For Deskstop Screens)</a></p>
-                    <br>
-                </div>
-                </div>
-        <footer>
-            <p class="footnote">Copyright <span id="cyear"></span> by Diamond Francis. All Rights Reserved</p>
-          </footer>
-       <!--current year for copyright notice --> 
-           <script>
-            window.addEventListener('load', () => {
-            const year = document.getElementById('cyear');
-            year.innerHTML = new Date().getFullYear();
-            });
-          </script> 
+  <!-- main container -->
+  <main>
+    <!-- navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/builds.html">Builds</a></li>
+        <li><a href="/readings.html">Readings</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    <!-- content -->
+    <h1>Resources</h1>
+    <p>Resource Library.</p>
+    <div class="grid-area">
+      <!-- Resource list for design and dev topics -->
+      <div class="grid-1">
+        <h2>Wallpapers</h2>
+        <p>#1 - <a href="https://diamondfrancis.gumroad.com/l/iphone-14-pro-holographic-wallpaper?layout=profile">iPhone 14 Holographic Wallpaper</a></p>
+        <p>#2 - <a href="https://diamondfrancis.gumroad.com/l/minimal-circle-wallpaper-pack?layout=profile">Minimal Circle Wallpaper Pack<br>(For Desktop Screens)</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p class="footnote">Copyright <span id="cyear"></span> by Diamond Francis. All Rights Reserved</p>
+  </footer>
+
+  <!-- current year script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('cyear').textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
