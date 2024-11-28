@@ -209,6 +209,72 @@ table.GeneratedTable {
   }
 }
 
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  background: #000;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(to right, #ddd8dd, #e6e7ec);
+  border-bottom: 2px solid #d3cbd4;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  margin: 0 auto; /* Centers the navbar */
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  padding: 0px 0;
+}
+
+.navbar > ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to right, #ddd8dd, #e6e7ec);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  #nav-menu li {
+    text-align: center;
+    border-bottom: 1px solid #d3cbd4;
+  }
+
+  #nav-menu li a {
+    padding: 15px;
+    width: 100%;
+    display: block;
+  }
+}
+
+
 /* Grid */
 .grid-area {
   display: grid;
