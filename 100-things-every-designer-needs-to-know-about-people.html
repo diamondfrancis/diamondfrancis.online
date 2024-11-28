@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100 things every designer needs to know about people</title>
   </head>
+  <body>
+    <header>
+      <img
+        src="/public/x-diamondreadings-profile.jpg"
+        alt="Diamond Readings"
+        width="100"
+        height="100"
+        class="profile-image"
+      />
 
   <style>
           * {
@@ -90,6 +99,7 @@
       }
 
       .readings {
+        -webkit-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);
         background-color: #f9f7fb;
         border-radius: 12px;
@@ -175,32 +185,25 @@
 
       @keyframes zoomLast {
         0% {
-          transform: translateY(2rem) scale(1);
-          opacity: 0;
+          transform: scale(1);
         }
         100% {
-          transform: translateY(0) scale(1);
-          opacity: 1;
+          transform: scale(1.1);
         }
       }
 
-</style>
-<body>
-<!--Readings: Welcome to... @diamondreadings (Profile)-->
-    <header class="zoomLastAnimation">
-      <img
-        src="/public/x-diamondreadings-profile.jpg"
-        alt="Diamond Readings"
-        width="100"
-        height="100"
-        style="border-radius:100%"
-      />
-      <h1 class="title">@diamondreadings</h1>
-      <p class="sub-title">💎💎 Reads 💎💎</p><br>
+.profile-image {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+    </style>
+    <h1 class="title">@diamondreadings</h1>
+    <p class="sub-title">💎💎 Reads 💎💎</p><br>
     </header>
     <!--Readings: Welcome to... @diamondreadings (X/Twitter Links)-->
     <section class="projects">
-      <h2>I read the book '100 Things Every Designer Needs to Know About People' in 30 days!</h2><br>
+      <h2></h2>
       <p>Overview: 
         This book offers insights into enhancing the effectiveness, conversion rates, and usability of design projects by addressing key questions related to attention, memory, vision, error prediction, social interactions, motivation, optimal text line length, and font choices. It provides a comprehensive exploration of human behavior and cognition in the context of design.
       </p>
@@ -660,20 +663,20 @@
         <a
           href="https://twitter.com/diamondreadings"
           target="_blank"
-          rel="X/Twitter"
+          rel="noopener noreferrer"
           >Twitter</a
         >
         <a
           href="https://www.are.na/diamond-francis"
           target="_blank"
-          rel="Are.na"
+          rel="noopener noreferrer"
         >
           Are.na
         </a>
         <a
         href="/home.html"
         target="_blank"
-        rel="Homepage"
+        rel="noopener noreferrer"
       >>>Homepage <br><br>
       </a>
       </div>
