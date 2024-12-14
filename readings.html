@@ -1,77 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Adding Material Icons library -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="description" content="Readings on design and development. Weekly updates.">
-  <link rel="stylesheet" href="/style.css" />
-  <title>Readings</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore insightful readings on design, development, and creativity. Weekly updates to keep you inspired.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Diamond Francis Online - Readings</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-brand">
+          <div class="logo">
+              <span class="logo-text">Diamond Francis Online</span>
+              <div class="logo-shine"></div>
+          </div>
+      </div>
 
-<body>
-<!-- main container -->
-<main>
-  <!-- navbar -->
-  <nav class="navbar">
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul id="nav-menu">
-      <li><a href='/home.html'>Home</a></li>
-      <li><a href='/builds.html'>Builds</a></li>
-      <li><a href='/readings.html'>Readings</a></li>
-      <li><a href='/resources.html'>Resources</a></li>
-    </ul>
+      <div class="nav-links">
+          <a href="/home.html" class="nav-link">
+              <span>Home</span>
+              <div class="link-effect"></div>
+          </a>
+          <a href="/builds.html" class="nav-link">
+              <span>Builds</span>
+              <div class="link-effect"></div>
+          </a>
+          <a href="/readings.html" class="nav-link active">
+              <span>Readings</span>
+              <div class="link-effect"></div>
+          </a>
+          <a href="/resources.html" class="nav-link">
+              <span>Resources</span>
+              <div class="link-effect"></div>
+          </a>
+      </div>
+
+      <div class="nav-actions">
+          <button class="action-btn">
+              <div class="btn-text">Contact me</div>
+              <div class="btn-effect"></div>
+          </button>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
   </nav>
-  <!-- navbar end -->
-</main>
 
-  <!-- Page Content -->
-  <h1>Readings</h1>
-  <p>Doings and Learnings.</p>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+      <div class="menu-header">
+          <div class="logo">
+              <span class="logo-text">Diamond Francis Online</span>
+          </div>
+          <button class="close-menu" aria-label="Close mobile menu">
+              <span class="material-icons">close</span>
+          </button>
+      </div>
+      <div class="menu-links">
+          <a href="/home.html" class="menu-link">
+              <span>Home</span>
+          </a>
+          <a href="/builds.html" class="menu-link">
+              <span>Builds</span>
+          </a>
+          <a href="/readings.html" class="menu-link active">
+              <span>Readings</span>
+          </a>
+          <a href="/resources.html" class="menu-link">
+              <span>Resources</span>
+          </a>
+      </div>
+      <div class="menu-footer">
+          <button class="mobile-action-btn">
+              <span>Contact me</span>
+          </button>
+      </div>
+  </div>
+  <!-- Navbar end -->
 
-  <section class="cards">
-    <!-- Card 1 -->
-    <article class="card-1">
-      <p><a href="#" title="Learn more about Breakthrough Advertising">Breakthrough Advertising</a></p>
-      <img src="/src/images-ba.png" alt="Cover of the Breakthrough Advertising book">
-    </article>
+<!--main content start -->
+<h1>Readings</h1><br>
+<p>Doings and Learnings.</p>
+<!--main content end -->
 
-    <!-- Card 2 -->
-    <article class="card-1">
-      <p><a href="#" title="Learn more about Don't Make Me Think">Don't Make Me Think</a></p>
-      <img src="/src/41386fd5-32dc-4503-8ae1-9189732fb4ce.png" alt="Cover of the Don't Make Me Think book">
-    </article>
+   <!--cards section start-->
+      <section class="cards">
+        <article class="card">
+          <a href="#" title="Learn more about Breakthrough Advertising">
+            <img src="/src/images-ba.png" alt="Cover of 'Breakthrough Advertising' by Eugene Schwartz, focused on marketing strategies.">
+            <p>Breakthrough Advertising</p>
+          </a>
+        </article>
 
-    <!-- Card 3 -->
-    <article class="card-1">
-      <p><a href="/refactoring-ui.html" title="Learn more about Refactoring UI">Refactoring UI</a></p>
-      <img src="/src/refactoring-ui-784x1024.webp" alt="Cover of the Refactoring UI book" title="Refactoring UI book cover">
-    </article>
+        <article class="card">
+          <a href="#" title="Learn more about Don't Make Me Think">
+            <img src="/src/41386fd5-32dc-4503-8ae1-9189732fb4ce.png" alt="Cover of 'Don't Make Me Think' by Steve Krug, a guide on web usability.">
+            <p>Don't Make Me Think</p>
+          </a>
+        </article>
 
-    <!-- Card 4 -->
-    <article class="card-1">
-      <p><a href="/100-things-every-designer-needs-to-know-about-people.html" title="Learn more about 100 Things Every Designer Needs to Know About People">100 Things Every Designer Needs to Know About People</a></p>
-      <img src="/src/100things.webp" alt="Cover of the 100 Things Every Designer Needs to Know About People book">
-    </article>
-  </section>
-</main>
+        <article class="card">
+          <a href="/refactoring-ui.html" title="Learn more about Refactoring UI">
+            <img src="/src/refactoring-ui-784x1024.webp" alt="Cover of 'Refactoring UI' by Adam Wathan, tips for designing better UIs.">
+            <p>Refactoring UI</p>
+          </a>
+        </article>
 
-<!-- Footer -->
-<footer>
-  <p class="footnote">Copyright <span id="cyear"></span> by Diamond Francis. All Rights Reserved</p>
-</footer>
+        <article class="card">
+          <a href="/100-things-every-designer-needs-to-know-about-people.html" title="Learn more about 100 Things Every Designer Needs to Know About People">
+            <img src="/src/100things.webp" alt="Cover of '100 Things Every Designer Needs to Know About People' by Susan Weinschenk, a guide to psychology-based design.">
+            <p>100 Things Every Designer Needs to Know About People</p>
+          </a>
+        </article>
+      </section>
+   <!--cards section end-->
 
-<!-- Current Year Script -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('cyear').textContent = new Date().getFullYear();
-  });
-</script>
-<script src="/index.js"></script>
-</body>
-</html>
+  <!--footer start -->
+  <footer>
+    <p class="footnote">© <span id="cyear"></span> Diamond Francis — All Rights Reserved</p>
+  </footer>
+  <!--footer end -->
+
+  <!--current year for copyright notice start -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('cyear').textContent = new Date().getFullYear();
+    });
+  </script>
+  <!--current year for copyright notice end -->
+  
+  <!--toggle menu start -->
+  <script src="/index.js"></script>
+  <!--toggle menu end -->
+  </body>
+  </html>

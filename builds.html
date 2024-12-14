@@ -3,80 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" />
+    <meta name="description" content="Welcome to Diamond Francis Online, your hub for creative builds, readings, and resources. Stay connected and explore our offerings.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
     <!-- Adding Material Icons library -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Builds</title>
+    <title>Diamond Francis Online - Builds</title>
 </head>
 <body>
-<!-- main container -->
+
+<!-- Main container -->
 <main>
-  <!-- navbar -->
-  <nav class="navbar">
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="logo">
+                <span class="logo-text">Diamond Francis Online</span>
+                <div class="logo-shine"></div>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="/home.html" class="nav-link">
+                <span>Home</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="/builds.html" class="nav-link active">
+                <span>Builds</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="/readings.html" class="nav-link">
+                <span>Readings</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="/resources.html" class="nav-link">
+                <span>Resources</span>
+                <div class="link-effect"></div>
+            </a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="action-btn">
+                <div class="btn-text">Contact me</div>
+                <div class="btn-effect"></div>
+            </button>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="menu-header">
+            <div class="logo">
+                <span class="logo-text">Diamond Francis Online</span>
+            </div>
+            <button class="close-menu" aria-label="Close mobile menu">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <div class="menu-links">
+            <a href="/home.html" class="menu-link">
+                <span>Home</span>
+            </a>
+            <a href="/builds.html" class="menu-link active">
+                <span>Builds</span>
+            </a>
+            <a href="/readings.html" class="menu-link">
+                <span>Readings</span>
+            </a>
+            <a href="/resources.html" class="menu-link">
+                <span>Resources</span>
+            </a>
+        </div>
+        <div class="menu-footer">
+            <button class="mobile-action-btn">
+                <span>Contact me</span>
+            </button>
+        </div>
     </div>
-    <ul id="nav-menu">
-      <li><a href='/home.html'>Home</a></li>
-      <li><a href='/builds.html'>Builds</a></li>
-      <li><a href='/readings.html'>Readings</a></li>
-      <li><a href='/resources.html'>Resources</a></li>
-    </ul>
-  </nav>
-  <!-- navbar end -->
-</main>
+    <!-- Navbar end -->
 
-    <h1>Builds</h1>
-    <p>An overview of what I'm working on from time to time.</p>
-    <!-- Table html: List of builds (created by me! :) ) -->
-    <table class="GeneratedTable">
-      <thead>
-        <tr>
-          <th colspan="3" class="table-title">Builds</th>
-        </tr>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Links</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Sacred Words Daily</td>
-          <td><a href="http://sacredwordsdaily.com" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Diamond Francis Online</td>
-          <td><a href="http://diamondfrancis.online" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>SenseBend</td>
-          <td><a href="http://sensebend.com" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>MailSea AI</td>
-          <td><a href="http://mailseaai.co.uk" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
-        </tr>
-      </tbody>
-    </table>
+<!--main content start -->
+<h1>Builds</h1><br>
+<p>An overview of what I'm working on from time to time.</p>
+<!--main content end -->
 
-    <footer>
-      <p class="footnote">Copyright <span id="cyear"></span> by Diamond Francis. All Rights Reserved</p>
-    </footer>
+        <!-- Table: List of builds -->
+        <table class="GeneratedTable">
+            <thead>
+                <tr>
+                    <th colspan="3" class="table-title">Builds</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Links</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sacred Words Daily</td>
+                    <td><a href="http://sacredwordsdaily.com" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Diamond Francis Online</td>
+                    <td><a href="http://diamondfrancis.online" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SenseBend</td>
+                    <td><a href="http://sensebend.com" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>MailSea AI</td>
+                    <td><a href="http://mailseaai.co.uk" class="website-link" target="_blank" rel="noopener">Visit Website</a></td>
+                </tr>
+            </tbody>
+        </table>
 
- <!--current year for copyright notice --> 
-    <script>
-      window.addEventListener('load', () => {
-        const year = document.getElementById('cyear');
-        year.innerHTML = new Date().getFullYear();
-      });
-    </script>
-    <script src="/index.js"></script>
-</body>
-</html>
+  <!--footer start -->
+  <footer>
+    <p class="footnote">© <span id="cyear"></span> Diamond Francis — All Rights Reserved</p>
+  </footer>
+  <!--footer end -->
+
+  <!--current year for copyright notice start -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('cyear').textContent = new Date().getFullYear();
+    });
+  </script>
+  <!--current year for copyright notice end -->
+  
+  <!--toggle menu start -->
+  <script src="/index.js"></script>
+  <!--toggle menu end -->
+  </body>
+  </html>

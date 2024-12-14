@@ -3,53 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/style.css" />
-    <title>Resources</title>
+    <!-- Adding Material Icons library -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Diamond Francis Online - Resources</title>
 </head>
 <body>
 <!-- main container -->
 <main>
-  <!-- navbar -->
-  <nav class="navbar">
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul id="nav-menu">
-      <li><a href='/home.html'>Home</a></li>
-      <li><a href='/builds.html'>Builds</a></li>
-      <li><a href='/readings.html'>Readings</a></li>
-      <li><a href='/resources.html'>Resources</a></li>
-    </ul>
-  </nav>
-  <!-- navbar end -->
-</main>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-brand">
+          <div class="logo">
+              <span class="logo-text">Diamond Francis Online</span>
+              <div class="logo-shine"></div>
+          </div>
+      </div>
 
-    <!-- content -->
-    <h1>Resources</h1>
-    <p>Resource Library.</p>
+      <div class="nav-links">
+          <a href="/home.html" class="nav-link">
+              <span>Home</span>
+              <div class="link-effect"></div>
+          </a>
+          <a href="/builds.html" class="nav-link">
+              <span>Builds</span>
+              <div class="link-effect"></div>
+          </a>
+          <a href="/readings.html" class="nav-link">
+              <span>Readings</span>
+              <div class="link-effect"></div>
+          </a>
+          <a href="/resources.html" class="nav-link active">
+              <span>Resources</span>
+              <div class="link-effect"></div>
+          </a>
+      </div>
+
+      <div class="nav-actions">
+          <button class="action-btn">
+              <div class="btn-text">Contact me</div>
+              <div class="btn-effect"></div>
+          </button>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+      <div class="menu-header">
+          <div class="logo">
+              <span class="logo-text">Diamond Francis Online</span>
+          </div>
+          <button class="close-menu" aria-label="Close mobile menu">
+              <span class="material-icons">close</span>
+          </button>
+      </div>
+      <div class="menu-links">
+          <a href="/home.html" class="menu-link">
+              <span>Home</span>
+          </a>
+          <a href="/builds.html" class="menu-link">
+              <span>Builds</span>
+          </a>
+          <a href="/readings.html" class="menu-link">
+              <span>Readings</span>
+          </a>
+          <a href="/resources.html" class="menu-link active">
+              <span>Resources</span>
+          </a>
+      </div>
+      <div class="menu-footer">
+          <button class="mobile-action-btn">
+              <span>Contact me</span>
+          </button>
+      </div>
+  </div>
+  <!-- Navbar end -->
+
+<!--main content start -->
+<h1>Resources</h1><br>
+<p>Resource Library.</p>
+<!--main content end -->
 
     <!-- Resource list for design and dev topics -->
     <div class="grid-area">
       <div class="grid-1">
-        <h2>Wallpapers</h2>
+        <h2>Wallpapers</h2><br>
         <p>#1 - <a href="https://diamondfrancis.gumroad.com/l/iphone-14-pro-holographic-wallpaper?layout=profile">iPhone 14 Holographic Wallpaper</a></p>
         <p>#2 - <a href="https://diamondfrancis.gumroad.com/l/minimal-circle-wallpaper-pack?layout=profile">Minimal Circle Wallpaper Pack<br>(For Desktop Screens)</a></p>
       </div>
     </div>
 
-  <!-- footer -->
+  <!--footer start -->
   <footer>
-    <p class="footnote">Copyright <span id="cyear"></span> by Diamond Francis. All Rights Reserved</p>
+    <p class="footnote">© <span id="cyear"></span> Diamond Francis — All Rights Reserved</p>
   </footer>
+  <!--footer end -->
 
-  <!-- current year script -->
+  <!--current year for copyright notice start -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('cyear').textContent = new Date().getFullYear();
     });
   </script>
+  <!--current year for copyright notice end -->
+  
+  <!--toggle menu start -->
   <script src="/index.js"></script>
-</body>
+  <!--toggle menu end -->
+  </body>
 </html>
