@@ -239,7 +239,7 @@ p {
 
 .menu-footer {
   position: absolute;
-  bottom: 2rem;
+  bottom: 10rem;
   left: 2rem;
   right: 2rem;
 }
@@ -339,81 +339,86 @@ table.GeneratedTable {
 }
 
 /* Card Grid */
+/* Modern Cards Section Styles */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min width for a larger card */
+  gap: 1.5rem; /* Space between cards */
+  padding: 2rem; /* More padding for larger cards */
 }
 
+/* Modern Card Styles */
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
+  border: 1px solid #e0e0e0; /* Slightly lighter border for a modern look */
+  border-radius: 12px; /* Increased radius for a softer edge */
+  padding: 1.5rem; /* Extra padding for better content spacing */
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #ffffff; /* Light white background for a clean look */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
 }
 
 .card img {
-  width: 80%;
+  width: 70%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px; /* Slightly larger border-radius for images */
+  margin-bottom: 1rem; /* Space between image and text */
 }
 
 .card a {
   text-decoration: none;
   font-weight: bold;
-  color: #007BFF;
+  color: #0056b3; /* A deeper blue for better visibility */
   transition: color 0.3s ease;
 }
 
 .card a:hover {
-  color: #0056b3;
+  color: #003d80; /* Darker blue on hover for contrast */
 }
 
-/* Media Queries */
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .cards {
+    padding: 1.5rem; /* Reduce padding for medium screens */
+  }
 
-/* Tablets */
+  .card {
+    padding: 1rem; /* Reduce padding for better fit on medium screens */
+  }
+
+  .card img {
+    width: 90%; /* Slightly larger image size for better visibility */
+  }
+}
+
 @media (max-width: 768px) {
   .cards {
-    grid-template-columns: 1fr; /* One card per row */
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller cards for mobile screens */
+    gap: 1rem; /* Smaller gap for better spacing */
   }
 
-  .card-1 {
-    padding: 0.8rem;
+  .card {
+    padding: 0.75rem; /* Further reduced padding for mobile screens */
   }
 
-  .card-1 a {
-    font-size: 1.1rem;
-  }
-
-  .card-1 img {
-    width: 75%;
-    height: auto;
-    margin: 0 auto;
+  .card img {
+    width: 100%; /* Full width of the card for better responsiveness */
   }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
   .cards {
-    grid-template-columns: 1fr; /* One card per row */
-    gap: 0.8rem;
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    padding: 1rem; /* Tighten padding for single column layout */
   }
 
-  .card-1 {
-    padding: 0.5rem;
-  }
-
-  .card-1 a {
-    font-size: 1rem;
-  }
-
-  .card-1 img {
-    width: 65%;
-    height: auto;
-    margin: 0 auto;
+  .card {
+    padding: 0.5rem; /* Minimal padding for better fit on small screens */
   }
 }
 
@@ -457,3 +462,21 @@ table.GeneratedTable {
 }
 
 
+/* Footer */
+footer {
+  background-color: #ffffff; /* Dark background for contrast */
+  color: #1f1f1f; /* Light text color for readability */
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ffffff; /* Subtle border above footer */
+}
+
+.footnote {
+  margin: 0;
+  font-size: 1rem;
+  color: #252525; /* Lighter grey for the copyright text */
+}
+
+.footnote #cyear {
+  font-weight: bold;
+}

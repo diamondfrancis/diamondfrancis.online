@@ -11,85 +11,85 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation">
       <div class="nav-brand">
-          <div class="logo">
-              <span class="logo-text">Diamond Francis Online</span>
-              <div class="logo-shine"></div>
-          </div>
+        <div class="logo">
+          <span class="logo-text">Diamond Francis Online</span>
+          <div class="logo-shine"></div>
+        </div>
       </div>
 
       <div class="nav-links">
-          <a href="/home.html" class="nav-link">
-              <span>Home</span>
-              <div class="link-effect"></div>
-          </a>
-          <a href="/builds.html" class="nav-link">
-              <span>Builds</span>
-              <div class="link-effect"></div>
-          </a>
-          <a href="/readings.html" class="nav-link active">
-              <span>Readings</span>
-              <div class="link-effect"></div>
-          </a>
-          <a href="/resources.html" class="nav-link">
-              <span>Resources</span>
-              <div class="link-effect"></div>
-          </a>
+        <a href="/home.html" class="nav-link">
+          <span>Home</span>
+          <div class="link-effect"></div>
+        </a>
+        <a href="/builds.html" class="nav-link">
+          <span>Builds</span>
+          <div class="link-effect"></div>
+        </a>
+        <a href="/readings.html" class="nav-link active">
+          <span>Readings</span>
+          <div class="link-effect"></div>
+        </a>
+        <a href="/resources.html" class="nav-link">
+          <span>Resources</span>
+          <div class="link-effect"></div>
+        </a>
       </div>
 
       <div class="nav-actions">
         <a href="mailto:diamond-francis@hotmail.com" class="action-btn">
-            <div class="btn-text">Contact me</div>
-            <div class="btn-effect"></div>
+          <div class="btn-text">Contact me</div>
+          <div class="btn-effect"></div>
         </a>
-    </div>    
+      </div>
 
-      <button class="mobile-toggle" aria-label="Toggle mobile menu">
-          <span></span>
-          <span></span>
-          <span></span>
+      <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-  </nav>
+    </nav>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" role="dialog" aria-hidden="true">
       <div class="menu-header">
-          <div class="logo">
-              <span class="logo-text">Diamond Francis Online</span>
-          </div>
-          <button class="close-menu" aria-label="Close mobile menu">
-              <span class="material-icons">close</span>
-          </button>
+        <div class="logo">
+          <span class="logo-text">Diamond Francis Online</span>
+        </div>
+        <button class="close-menu" aria-label="Close mobile menu">
+          <span class="material-icons">close</span>
+        </button>
       </div>
       <div class="menu-links">
-          <a href="/home.html" class="menu-link">
-              <span>Home</span>
-          </a>
-          <a href="/builds.html" class="menu-link">
-              <span>Builds</span>
-          </a>
-          <a href="/readings.html" class="menu-link active">
-              <span>Readings</span>
-          </a>
-          <a href="/resources.html" class="menu-link">
-              <span>Resources</span>
-          </a>
+        <a href="/home.html" class="menu-link">
+          <span>Home</span>
+        </a>
+        <a href="/builds.html" class="menu-link">
+          <span>Builds</span>
+        </a>
+        <a href="/readings.html" class="menu-link active">
+          <span>Readings</span>
+        </a>
+        <a href="/resources.html" class="menu-link">
+          <span>Resources</span>
+        </a>
       </div>
       <div class="menu-footer">
         <a href="mailto:diamond-francis@hotmail.com" class="mobile-action-btn" aria-label="Send me an email">
-            <span>Contact Me</span>
+          <span>Contact Me</span>
         </a>
+      </div>
     </div>
-  </div>
-  <!-- Navbar end -->
+    <!-- Navbar end -->
 
-<!--main content start -->
-<h1>Readings</h1><br>
-<p>Doings and Learnings.</p>
-<!--main content end -->
+    <!-- Main content start -->
+    <main>
+      <h1>Readings</h1><br>
+      <p>Doings and Learnings.</p>
 
-   <!--cards section start-->
+      <!-- Cards section start -->
       <section class="cards">
         <article class="card">
           <a href="#" title="Learn more about Breakthrough Advertising">
@@ -107,7 +107,7 @@
 
         <article class="card">
           <a href="/refactoring-ui.html" title="Learn more about Refactoring UI">
-            <img src="/src/refactoring-ui-784x1024.webp" alt="Cover of 'Refactoring UI' by Adam Wathan, tips for designing better UIs.">
+            <img src="/src/refactoring-ui-784x1024.webp" width="100" height="250" alt="Cover of 'Refactoring UI' by Adam Wathan, tips for designing better UIs.">
             <p>Refactoring UI</p>
           </a>
         </article>
@@ -119,24 +119,26 @@
           </a>
         </article>
       </section>
-   <!--cards section end-->
+      <!-- Cards section end -->
+    </main>
+    <!-- Main content end -->
 
-  <!--footer start -->
-  <footer>
-    <p class="footnote">© <span id="cyear"></span> Diamond Francis — All Rights Reserved</p>
-  </footer>
-  <!--footer end -->
+    <!-- Footer start -->
+    <footer>
+      <p class="footnote">© <span id="cyear"></span> Diamond Francis — All Rights Reserved</p>
+    </footer>
+    <!-- Footer end -->
 
-  <!--current year for copyright notice start -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('cyear').textContent = new Date().getFullYear();
-    });
-  </script>
-  <!--current year for copyright notice end -->
-  
-  <!--toggle menu start -->
-  <script src="/index.js"></script>
-  <!--toggle menu end -->
+    <!-- Current year for copyright notice start -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('cyear').textContent = new Date().getFullYear();
+      });
+    </script>
+    <!-- Current year for copyright notice end -->
+    
+    <!-- Toggle menu start -->
+    <script src="/index.js"></script>
+    <!-- Toggle menu end -->
   </body>
-  </html>
+</html>
